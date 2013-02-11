@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from flashcards.models import Set, Card
 
 
-class SetForm(TendenciBaseForm):
+class SetForm(forms.Form):
 
     class Meta:
         model = Set
@@ -15,7 +15,7 @@ class SetForm(TendenciBaseForm):
             'level',
         )
 
-class CardForm(TendenciBaseForm):
+class CardForm(forms.Form):
 
     class Meta:
         model = Card
